@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <VersionPrefix>1.0</VersionPrefix>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0;net9.0;net10.0</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- IDE0130: Namespace does not match folder structure -->
+		<!-- IDE0290: Use primary constructor -->
+        <NoWarn>IDE0130;IDE0290</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IsAotCompatible>true</IsAotCompatible>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Debounce</PackageId>
+		<Description>A thread-safe mechanism that ensures an operation is not active more than once at a time.</Description>
+		<Authors>Joyless</Authors>
+		<RepositoryUrl>https://github.com/Joy-less/Debounce</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>debounce; lock</PackageTags>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Copyright>Joyless</Copyright>
+		<PackageProjectUrl>https://github.com/Joy-less/Debounce</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../README.md" Pack="true" PackagePath="/" />
+		<None Include="../LICENSE.md" Pack="true" PackagePath="/" />
+	</ItemGroup>
+</Project>
