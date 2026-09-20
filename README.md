@@ -1,5 +1,7 @@
 # Debounce
 
+[![NuGet](https://img.shields.io/nuget/v/Debounce.svg)](https://www.nuget.org/packages/Debounce)
+
 A thread-safe mechanism that ensures an operation is not active more than once at a time.
 
 Whereas a lock waits for an operation to become available, a debounce throws an exception
